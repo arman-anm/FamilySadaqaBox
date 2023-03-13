@@ -1,0 +1,156 @@
+/* <===== FONTS =====> */
+/* font-family: 'Noto Sans Bengali', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap');
+
+/* <===== ROOT & VARIABLES =====> */
+:root {
+  /* TYPOGRAPHY */
+  font-size: 10px;  /* making my font size 10px would make it easier to calculate  */
+  --ff-primary:'Noto Sans Bengali', sans-serif;
+  --ff-heading: 'Noto Sans Bengali', sans-serif ;
+  --fs-p: clamp(1.6rem, 5vw, 2.4rem);
+  --fs-h1: calc(var(--fs-p) * 2.5);
+  --fs-h2: calc(var(--fs-p) * 1.75);
+  --fs-h3: calc(var(--fs-p) * 1.35);
+  --fs-btn: calc(var(--fs-p) * .80);
+  --fs-caption: calc(var(--fs-p) * .5);
+  --fs-footer: calc(var(--fs-p) * .85);
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700; 
+  /* COLOR */
+  --color-bg: white;
+  --color-text: black;
+  --color-h1: black;
+  --color-h2: black;
+  --color-h3: black;
+  --color-btn-bg: #181A1B;
+  --color-btn-txt: white;
+  --color-btn-border: dimgrey;
+  --color-active-bg: rgba(112, 128, 144, 0.25);  
+  
+  /* LAYOUT */
+  --white-space: clamp(5px, 5vw, 35px);
+  --white-space-extended: clamp(50px, 5vw, 100px);
+}
+
+
+/* <===== GLOBAL STYLES =====> */
+h1 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--color-h1);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h2);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h3);
+  line-height: 1.35;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-normal);
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-nav-text);
+}
+
+
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: var(--white-space);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-txt);
+  font-size: var(--fs-btn);
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-btn-border);
+  border-radius: 7.5px;
+  transition: .3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--color-btn-txt);
+  color: var(--color-btn-bg);
+  font-weight: var(--fw-bold);
+} 
+
+.img {
+  border-radius: 7.5px;
+}
+
+.section {
+  margin: var(--white-space-extended) 0;
+}
+
+
+/* <===== BODY =====> */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding: var(--white-space);
+}
+
+/* <===== HEADER =====> */
+header {
+  text-transform: capitalize;
+  /* letter-spacing: 2px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: var(--fw-normal);
+}
+
+.logo:hover {
+  font-weight: var(--fw-bold);
+}
+
+.nav-list {
+  display: none;
+}
+
+/* <===== MAIN =====> */
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+}
