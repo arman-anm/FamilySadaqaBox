@@ -5,15 +5,11 @@
 /* font-family: 'Mulish', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+/* font-family: 'Inter', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 :root {
-  --ff-primary:'Mulish', sans-serif;
-  --ff-heading: 'Oswald', sans-serif ;
-}
-
-header {
-  font-family: var(--ff-heading);
-}
-
-img {
-  border-radius: 5px;
+  /* --ff-primary:'Mulish', sans-serif; */
+  --ff-primary:'Inter', sans-serif;
+  --ff-secondary: 'Oswald', sans-serif ;
 }

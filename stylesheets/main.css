@@ -7,27 +7,27 @@
   /* TYPOGRAPHY */
   font-size: 10px;  /* making my font size 10px would make it easier to calculate  */
   --ff-primary:'Noto Sans Bengali', sans-serif;
-  --ff-heading: 'Noto Sans Bengali', sans-serif ;
+  --ff-secondary: 'Noto Sans Bengali', sans-serif ;
   --fs-p: clamp(1.6rem, 5vw, 2.4rem);
   --fs-h1: calc(var(--fs-p) * 2.5);
   --fs-h2: calc(var(--fs-p) * 1.75);
   --fs-h3: calc(var(--fs-p) * 1.35);
   --fs-btn: calc(var(--fs-p) * .80);
-  --fs-caption: calc(var(--fs-p) * .5);
-  --fs-footer: calc(var(--fs-p) * .85);
+  /* --fs-caption: calc(var(--fs-p) * .5);
+  --fs-footer: calc(var(--fs-p) * .85); */
   --fw-normal: 400;
   --fw-medium: 500;
   --fw-bold: 700; 
   /* COLOR */
-  --color-bg: white;
-  --color-text: black;
-  --color-h1: black;
-  --color-h2: black;
-  --color-h3: black;
-  --color-btn-bg: #181A1B;
-  --color-btn-txt: white;
-  --color-btn-border: dimgrey;
-  --color-active-bg: rgba(112, 128, 144, 0.25);  
+  --color-bg: #051917;
+  --color-text: #FFEBAF;
+  --color-text-styled: #F7D672;
+  --color-h1: #F7D672;
+  --color-h2: #F7D672;
+  /* --color-btn-bg: #181A1B; */
+  --color-btn-txt: #F7D672;
+  --color-btn-border: #FFEBAF;
+  /* --color-active-bg: rgba(112, 128, 144, 0.25);   */
   
   /* LAYOUT */
   --white-space: clamp(5px, 5vw, 35px);
@@ -37,7 +37,7 @@
 
 /* <===== GLOBAL STYLES =====> */
 h1 {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
   text-transform: capitalize;
@@ -47,7 +47,7 @@ h1 {
 }
 
 h2 {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-h2);
   font-weight: var(--fw-medium);
   text-transform: capitalize;
@@ -57,7 +57,7 @@ h2 {
 }
 
 h3 {
-  font-family: var(--ff-heading);
+  font-family: var(--ff-secondary);
   font-size: var(--fs-h3);
   font-weight: var(--fw-medium);
   text-transform: capitalize;
@@ -112,7 +112,7 @@ a {
 } 
 
 .img {
-  border-radius: 7.5px;
+  /* border-radius: 7.5px; */
 }
 
 .section {
@@ -126,7 +126,10 @@ body {
   font-size: var(--fs-p);
   color: var(--color-text);
   background-color: var(--color-bg);
-  padding: var(--white-space);
+  /* padding: var(--white-space); */
+  background-image: url("../assets/images/background\ pattern.png");
+  background-repeat: repeat;
+  /* border: 1px solid var(--color-h1); */
 }
 
 /* <===== HEADER =====> */
@@ -135,15 +138,10 @@ header {
   /* letter-spacing: 2px; */
   display: flex;
   justify-content: space-between;
+  display: none;
 }
 
-.logo {
-  font-weight: var(--fw-normal);
-}
 
-.logo:hover {
-  font-weight: var(--fw-bold);
-}
 
 .nav-list {
   display: none;
@@ -153,4 +151,11 @@ header {
 main {
   margin: 0 auto;
   max-width: 1440px;
+}
+
+.styled-text {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-medium);
+  color: var(--color-text-styled);
+  /* font-style: italic; */
 }
