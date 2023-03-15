@@ -181,9 +181,41 @@ body {
 
 .top-bar-section {
   background-color: var(--color-bg);
-  padding: var(--white-space) 0;
+  padding: var(--white-space);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
+.logo-container img {
+  width: calc(var(--white-space) *1);
+  max-width: 100%;
+  display: inline-block;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-text {
+  font-family: 'Oswald', sans-serif;
+  font-weight: var(--fw-medium);
+  color: var(--color-h1);
+  padding: 0 calc(var(--white-space) * .5);
+  font-size: var(--white-space);
+  /* text-transform: uppercase; */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container a {
+  text-decoration: none;
+  font-style: normal;
+}
 
 /* <===== MAIN =====> */
 main {
