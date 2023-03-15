@@ -180,7 +180,8 @@ body {
 /* <===== HEADER =====> */
 
 .top-bar-section {
-  /* display: none; */
+  background-color: var(--color-bg);
+  padding: var(--white-space) 0;
 }
 
 
