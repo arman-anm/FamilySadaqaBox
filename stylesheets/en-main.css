@@ -1,0 +1,9 @@
+:root {
+  --ff-primary:'Inter', sans-serif;
+  --ff-secondary: 'Oswald', sans-serif ;
+}
+
+.btn-lang-bn {
+  font-family: 'Noto Sans Bengali', sans-serif;
+  font-style: normal;
+}

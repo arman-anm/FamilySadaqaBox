@@ -5,9 +5,6 @@
 /* font-family: 'Oswald', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
-/* font-family: 'Mulish', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
 /* font-family: 'Inter', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -34,7 +31,6 @@
   --color-h2: #F7D672;
   --color-h3: #F7D672;
   --color-btn-bg: #051917;
-  --color-btn-bg: #8DA276;
   --color-btn-txt:  #051917;
   --color-btn-txt:  #F7D672;
   --color-a: #F7D672;
@@ -53,7 +49,7 @@ h1 {
   font-family: var(--ff-secondary);
   font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
   color: var(--color-h1);
   line-height: 1.25;
   margin-bottom: 1rem;
@@ -67,7 +63,6 @@ h2 {
   color: var(--color-h2);
   line-height: 1.35;
   margin-bottom: 1rem;
-  text-decoration: underline;
 }
 
 h3 {
@@ -102,17 +97,15 @@ li {
 a {
   text-decoration: underline;
   font-weight: var(--fw-medium);
-  font-style: normal;
   font-style: italic;
   color: var(--color-a);
 }
 
 a:hover {
-  font-style: italic;
   font-style: normal;
 }
 
-.btn-div {
+.btn-container {
   text-align: center;
   margin-top: var(--white-space);
 }
@@ -128,30 +121,24 @@ a:hover {
   border-radius: 2.5px;
   transition: .1s;
   text-align: center;
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 
 .btn:hover {
-  background-color: var(--color-btn-txt);
-  color: var(--color-btn-bg);
   font-weight: var(--fw-bold);
 } 
 
 
-.btn-lang-div {
+.btn-lang-container {
   
   margin-top: calc(var(--white-space) * -.5);
   margin-bottom: calc(var(--white-space) * -.5);
-  /* margin-top: calc(var(--white-space-extended) * -.5); */
-  /* margin-bottom: calc(var(--white-space-extended) * -.5); */
   text-align: right;
-  /* text-align: center; */
 }
 
 .btn-lang {
   display: inline-block;
-  /* text-align: right; */
   text-align: center;
   font-size: var(--fs-btn);
   text-transform: capitalize;
@@ -167,11 +154,6 @@ a:hover {
 .btn-lang:hover {
   color: var(--color-btn-txt);
   font-style: italic;
-}
-
-.btn-lang-bn {
-  font-family: 'Noto Sans Bengali', sans-serif;
-  font-style: normal;
 }
 
 
@@ -191,17 +173,14 @@ body {
   color: var(--color-text);
   font-weight: var(--fw-medium);
   background-color: var(--color-bg);
-  background-image: url("../assets/images/background\ pattern.png");
+  background-image: url("../assets/images/background-pattern.png");
   background-repeat: repeat;
 }
 
 /* <===== HEADER =====> */
 
-header {
-  /* margin: var(--white-space-extended) 0; */
-}
-.logo-and-nav-section {
-  display: none;
+.top-bar-section {
+  /* display: none; */
 }
 
 
@@ -209,15 +188,13 @@ header {
 main {
   margin: 0 auto;
   max-width: 1440px;
-  /* max-width: 960px; */
   padding: var(--white-space);
 }
 
-.styled-text {
+.name {
   font-family: var(--ff-secondary);
   font-weight: var(--fw-medium);
   color: var(--color-text-styled);
-  /* font-style: italic; */
 }
 
 .hero-img img {
@@ -226,36 +203,37 @@ main {
   margin-right: auto;
 }
 
-
-
-.youtube-title-bn {
-  font-family: 'Noto Sans Bengali', sans-serif;
-  text-align: center;
-  margin-top: calc(var(--white-space) * .5);
-  background-color: var(--color-bg);
-  margin: 0;
+.article-card, .video-card {
+  border-top: 1px solid var(--color-text-styled);  
+  border: 1px solid var(--color-text-styled);
   padding: var(--white-space);
 }
 
-.endorsement-card {
+.btn-read-full-container {
+  text-align: left;
+}
+
+.iframe-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden; 
+  max-width: 100%; 
   border: 1px solid var(--color-btn-border);
-  margin-top: var(--white-space);
+} 
+
+.iframe-container iframe { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
 }
 
-
-
-.btn-lang-div {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center; */
+.youtube-title-bn {
+  font-family: 'Noto Sans Bengali', sans-serif;
 }
-.icon-lang {
-  max-width: var(--fs-btn);
-  margin-right: 7.5px;
-  display: block;
-  display: none;
-}
+
 footer {
   padding-bottom: 200px;
 }
