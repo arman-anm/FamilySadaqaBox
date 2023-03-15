@@ -236,7 +236,7 @@ main {
   margin-right: auto;
 }
 
-.article-card, .video-card {
+.article-card {
   border-top: 1px solid var(--color-text-styled);  
   border: 1px solid var(--color-text-styled);
   padding: var(--white-space);
@@ -265,8 +265,31 @@ main {
 
 .youtube-title-bn {
   font-family: 'Noto Sans Bengali', sans-serif;
+  margin: 0;
+  margin-top: calc(var(--white-space) * .5);
+  font-size: calc(var(--white-space-extended) * .5);
+  color: var(--color-text);
 }
+
+
 
 footer {
   padding-bottom: 200px;
 }
+
+.video-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.video-card {
+  margin: calc(var(--white-space) *.5);
+  width: min(100%, 400px);
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: var(--white-space);
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
