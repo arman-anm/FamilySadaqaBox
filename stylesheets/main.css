@@ -171,7 +171,7 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-p);
   color: var(--color-text);
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-normal);
   background-color: var(--color-bg);
   background-image: url("../assets/images/background-pattern.png");
   background-repeat: repeat;
