@@ -79,7 +79,6 @@ p {
   font-family: var(--ff-primary);
   font-size: var(--fs-p);
   font-weight: var(--fw-normal);
-  font-weight: var(--fw-medium);
   color: var(--color-text);
   line-height: 1.5;
   margin-top: 1.75rem;
